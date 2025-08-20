@@ -47,12 +47,13 @@ class VocabularyGame {
             this.nextCard();
         });
         
-        // Card flip events
-        document.getElementById('vocabularyCard').addEventListener('click', () => {
+        // Card flip events - now using dedicated flip button
+        document.getElementById('flipBtn').addEventListener('click', () => {
             this.flipCard();
         });
         
-        // Touch events for mobile
+        // Remove card tap flip functionality - card is now just for visual display
+        // Touch events for mobile - only for swipe gestures, not tapping
         this.setupTouchEvents();
         
         // Keyboard events
@@ -77,7 +78,7 @@ class VocabularyGame {
             const diffX = startX - endX;
             const diffY = startY - endY;
             
-            // Detect swipe gestures
+            // Detect swipe gestures only
             if (Math.abs(diffX) > Math.abs(diffY)) {
                 if (Math.abs(diffX) > 50) { // Minimum swipe distance
                     if (diffX > 0) {
@@ -88,14 +89,9 @@ class VocabularyGame {
                         this.previousCard();
                     }
                     e.preventDefault();
-                    return;
                 }
             }
-            
-            // If not a swipe, treat as tap to flip
-            if (Math.abs(diffX) < 10 && Math.abs(diffY) < 10) {
-                this.flipCard();
-            }
+            // Remove tap-to-flip functionality - no longer needed
         });
     }
     
@@ -136,9 +132,14 @@ class VocabularyGame {
     }
     
     loadWordSet(setName) {
-        // For now, only bild1 is available
+        // Load available word sets
         if (setName === 'bild1' && typeof bild1_words !== 'undefined') {
             this.currentWords = [...bild1_words];
+            this.currentIndex = 0;
+            this.isShuffled = false;
+            this.wordsLearned.clear();
+        } else if (setName === 'bild2' && typeof bild2_words !== 'undefined') {
+            this.currentWords = [...bild2_words];
             this.currentIndex = 0;
             this.isShuffled = false;
             this.wordsLearned.clear();
@@ -203,22 +204,31 @@ class VocabularyGame {
         if (this.currentWords.length === 0) return;
         
         const card = document.getElementById('vocabularyCard');
+        const flipBtn = document.getElementById('flipBtn');
+        const flipBtnText = flipBtn.querySelector('.flip-btn-text');
         
         if (!this.isCardFlipped) {
             // Flip to back (show meaning)
             card.classList.add('flipped');
             this.isCardFlipped = true;
             this.markWordAsLearned();
+            flipBtnText.textContent = 'Show Word';
         } else {
-            // Flip to front and go to next word
-            this.nextCard();
+            // Flip to front (show word)
+            card.classList.remove('flipped');
+            this.isCardFlipped = false;
+            flipBtnText.textContent = 'Flip Card';
         }
     }
     
     resetCard() {
         const card = document.getElementById('vocabularyCard');
+        const flipBtn = document.getElementById('flipBtn');
+        const flipBtnText = flipBtn.querySelector('.flip-btn-text');
+        
         card.classList.remove('flipped');
         this.isCardFlipped = false;
+        flipBtnText.textContent = 'Flip Card';
     }
     
     nextCard() {
@@ -422,8 +432,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Load saved progress if available
     const savedProgress = ProgressManager.loadProgress();
-    if (savedProgress && savedProgress.setName === 'bild1') {
-        // Restore progress for bild1 only (since other sets aren't available yet)
+    if (savedProgress && (savedProgress.setName === 'bild1' || savedProgress.setName === 'bild2')) {
+        // Restore progress for available sets
         vocabularyGame.currentIndex = savedProgress.currentIndex || 0;
         savedProgress.wordsLearned.forEach(word => {
             vocabularyGame.wordsLearned.add(word);
@@ -485,4 +495,3 @@ const rippleCSS = `
 const style = document.createElement('style');
 style.textContent = rippleCSS;
 document.head.appendChild(style);
-

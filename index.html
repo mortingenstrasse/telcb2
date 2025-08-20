@@ -24,10 +24,10 @@
                         <span class="set-name">Bild 1</span>
                         <span class="set-description">Freizeit vs Arbeitszeit</span>
                     </button>
-                    <button class="word-set-btn disabled" data-set="bild2">
+                    <button class="word-set-btn" data-set="bild2">
                         <span class="set-number">02</span>
                         <span class="set-name">Bild 2</span>
-                        <span class="set-description">Coming Soon</span>
+                        <span class="set-description">Arbeit in der Zukunft</span>
                     </button>
                     <button class="word-set-btn disabled" data-set="bild3">
                         <span class="set-number">03</span>
@@ -124,7 +124,7 @@
                                         Click to start
                                     </div>
                                     <div class="tap-hint">
-                                        Tap to reveal meaning
+                                        Use the flip button to reveal meaning
                                     </div>
                                 </div>
                             </div>
@@ -139,11 +139,19 @@
                                         Example sentence will appear here
                                     </div>
                                     <div class="tap-hint">
-                                        Tap to see next word
+                                        Use navigation buttons to continue
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    
+                    <!-- Flip Button -->
+                    <div class="flip-button-container">
+                        <button id="flipBtn" class="flip-btn">
+                            <span class="flip-btn-text">Flip Card</span>
+                            <span class="flip-btn-icon">🔄</span>
+                        </button>
                     </div>
                 </div>
 
@@ -174,7 +182,7 @@
 
     <!-- Scripts -->
     <script src="bild1.js"></script>
+    <script src="bild2.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
