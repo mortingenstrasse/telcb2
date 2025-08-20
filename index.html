@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German-Turkish Vocabulary Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="app-title">🇩🇪 Deutsch-Türkçe 🇹🇷</h1>
+            <p class="app-subtitle">Vocabulary Learning Cards</p>
+        </header>
+
+        <!-- Dashboard Screen -->
+        <div id="dashboard" class="screen active">
+            <div class="dashboard-container">
+                <h2 class="dashboard-title">Select a Word Set</h2>
+                <div class="word-sets-grid">
+                    <button class="word-set-btn active" data-set="bild1">
+                        <span class="set-number">01</span>
+                        <span class="set-name">Bild 1</span>
+                        <span class="set-description">Freizeit vs Arbeitszeit</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild2">
+                        <span class="set-number">02</span>
+                        <span class="set-name">Bild 2</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild3">
+                        <span class="set-number">03</span>
+                        <span class="set-name">Bild 3</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild4">
+                        <span class="set-number">04</span>
+                        <span class="set-name">Bild 4</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild5">
+                        <span class="set-number">05</span>
+                        <span class="set-name">Bild 5</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild6">
+                        <span class="set-number">06</span>
+                        <span class="set-name">Bild 6</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild7">
+                        <span class="set-number">07</span>
+                        <span class="set-name">Bild 7</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild8">
+                        <span class="set-number">08</span>
+                        <span class="set-name">Bild 8</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild9">
+                        <span class="set-number">09</span>
+                        <span class="set-name">Bild 9</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild10">
+                        <span class="set-number">10</span>
+                        <span class="set-name">Bild 10</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild11">
+                        <span class="set-number">11</span>
+                        <span class="set-name">Bild 11</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild12">
+                        <span class="set-number">12</span>
+                        <span class="set-name">Bild 12</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild13">
+                        <span class="set-number">13</span>
+                        <span class="set-name">Bild 13</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild14">
+                        <span class="set-number">14</span>
+                        <span class="set-name">Bild 14</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                    <button class="word-set-btn disabled" data-set="bild15">
+                        <span class="set-number">15</span>
+                        <span class="set-name">Bild 15</span>
+                        <span class="set-description">Coming Soon</span>
+                    </button>
+                </div>
+                <button id="startGameBtn" class="start-game-btn">
+                    Start Learning
+                </button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen">
+            <div class="game-container">
+                <!-- Game Header -->
+                <div class="game-header">
+                    <button id="backBtn" class="back-btn">← Back</button>
+                    <div class="progress-info">
+                        <span id="currentCard">1</span> / <span id="totalCards">0</span>
+                    </div>
+                    <button id="shuffleBtn" class="shuffle-btn">🔀</button>
+                </div>
+
+                <!-- Card Container -->
+                <div class="card-container">
+                    <div id="vocabularyCard" class="vocabulary-card">
+                        <div class="card-inner">
+                            <!-- Front Side -->
+                            <div class="card-front">
+                                <div class="card-content">
+                                    <div class="german-word" id="germanWord">
+                                        Click to start
+                                    </div>
+                                    <div class="tap-hint">
+                                        Tap to reveal meaning
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Back Side -->
+                            <div class="card-back">
+                                <div class="card-content">
+                                    <div class="turkish-meaning" id="turkishMeaning">
+                                        Turkish meaning will appear here
+                                    </div>
+                                    <div class="example-sentence" id="exampleSentence">
+                                        Example sentence will appear here
+                                    </div>
+                                    <div class="tap-hint">
+                                        Tap to see next word
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="navigation-controls">
+                    <button id="prevBtn" class="nav-btn">
+                        ← Previous
+                    </button>
+                    <button id="nextBtn" class="nav-btn">
+                        Next →
+                    </button>
+                </div>
+
+                <!-- Game Stats -->
+                <div class="game-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Words Learned</span>
+                        <span class="stat-value" id="wordsLearned">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Current Set</span>
+                        <span class="stat-value" id="currentSet">Bild 1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="bild1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
