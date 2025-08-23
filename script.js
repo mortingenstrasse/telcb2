@@ -14,7 +14,6 @@ class VocabularyGame {
     init() {
         this.bindEvents();
         this.loadWordSet(this.currentSet);
-        this.updateUI();
     }
     
     bindEvents() {
@@ -24,7 +23,7 @@ class VocabularyGame {
         });
         
         // Word set selection
-        document.querySelectorAll('.word-set-btn:not(.disabled)').forEach(btn => {
+        document.querySelectorAll('.word-set-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 this.selectWordSet(e.target.closest('.word-set-btn').dataset.set);
             });
@@ -131,23 +130,54 @@ class VocabularyGame {
         }
     }
     
-    loadWordSet(setName) {
-        // Load available word sets
-        if (setName === 'bild1' && typeof bild1_words !== 'undefined') {
-            this.currentWords = [...bild1_words];
+    async loadWordSet(setName) {
+        try {
+            const response = await fetch(`${setName}.js`);
+            if (!response.ok) {
+                throw new Error(`Failed to load ${setName}.js: ${response.statusText}`);
+            }
+            const text = await response.text();
+            // Use new Function to safely execute the JS array literal
+            const data = new Function(`return ${text}`)();
+            
+            if (!Array.isArray(data) || data.length === 0) {
+                throw new Error('Loaded data is not a valid array or is empty.');
+            }
+
+            this.currentWords = [...data];
             this.currentIndex = 0;
             this.isShuffled = false;
             this.wordsLearned.clear();
-        } else if (setName === 'bild2' && typeof bild2_words !== 'undefined') {
-            this.currentWords = [...bild2_words];
-            this.currentIndex = 0;
-            this.isShuffled = false;
-            this.wordsLearned.clear();
-        } else {
+            
+            // Update button description
+            this.updateButtonDescription(setName);
+        } catch (error) {
+            console.error(`Error loading word set ${setName}:`, error);
             this.currentWords = [];
+            this.updateButtonDescription(setName); // Update to show it's disabled
+            alert(`Could not load word set "${setName}". Please check the file and try again.`);
+        } finally {
+            this.updateUI();
         }
-        
-        this.updateUI();
+    }
+    
+    updateButtonDescription(setName) {
+        const selectedBtn = document.querySelector(`[data-set="${setName}"]`);
+        if (selectedBtn) {
+            const descriptionSpan = selectedBtn.querySelector('.set-description');
+            if (this.currentWords.length > 0) {
+                // Special case for bild1
+                if (setName === 'bild1') {
+                    descriptionSpan.textContent = 'Freizeit vs Arbeitszeit';
+                } else {
+                    descriptionSpan.textContent = `${this.currentWords.length} words available`;
+                }
+                selectedBtn.classList.remove('disabled');
+            } else {
+                descriptionSpan.textContent = 'Click to load';
+                selectedBtn.classList.add('disabled');
+            }
+        }
     }
     
     shuffleWords() {
@@ -326,12 +356,7 @@ class VocabularyGame {
             'bild7': 'Bild 7',
             'bild8': 'Bild 8',
             'bild9': 'Bild 9',
-            'bild10': 'Bild 10',
-            'bild11': 'Bild 11',
-            'bild12': 'Bild 12',
-            'bild13': 'Bild 13',
-            'bild14': 'Bild 14',
-            'bild15': 'Bild 15'
+            'bild10': 'Bild 10'
         };
         return setNames[setName] || setName;
     }
@@ -363,9 +388,7 @@ function addRippleEffect(element) {
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('button, .word-set-btn');
     buttons.forEach(button => {
-        if (!button.classList.contains('disabled')) {
-            addRippleEffect(button);
-        }
+        addRippleEffect(button);
     });
 });
 
@@ -423,7 +446,7 @@ class ProgressManager {
 }
 
 // Initialize the game when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     // Initialize mobile optimizations
     optimizeForMobile();
     
@@ -432,13 +455,25 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Load saved progress if available
     const savedProgress = ProgressManager.loadProgress();
-    if (savedProgress && (savedProgress.setName === 'bild1' || savedProgress.setName === 'bild2')) {
-        // Restore progress for available sets
-        vocabularyGame.currentIndex = savedProgress.currentIndex || 0;
-        savedProgress.wordsLearned.forEach(word => {
-            vocabularyGame.wordsLearned.add(word);
-        });
-        vocabularyGame.updateGameUI();
+    if (savedProgress) {
+        // Attempt to load the saved word set
+        await vocabularyGame.loadWordSet(savedProgress.setName);
+        
+        // If words were successfully loaded for the saved set, restore progress
+        if (vocabularyGame.currentWords.length > 0) {
+            vocabularyGame.currentSet = savedProgress.setName;
+            vocabularyGame.currentIndex = savedProgress.currentIndex || 0;
+            savedProgress.wordsLearned.forEach(word => {
+                vocabularyGame.wordsLearned.add(word);
+            });
+            vocabularyGame.updateGameUI();
+        } else {
+            // If the saved set couldn't be loaded, default to bild1 and update UI
+            await vocabularyGame.loadWordSet('bild1');
+        }
+    } else {
+        // If no saved progress, load the default set (bild1)
+        await vocabularyGame.loadWordSet('bild1');
     }
     
     // Save progress periodically
@@ -488,6 +523,10 @@ const rippleCSS = `
 .touch-device .shuffle-btn:hover,
 .touch-device .nav-btn:hover {
     transform: none;
+}
+
+.disabled .ripple {
+    display: none;
 }
 `;
 

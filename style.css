@@ -1,568 +1,181 @@
-/* Reset and Base Styles */
+/* Google Fonts'dan pixel fontunu çekiyoruz */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --bg-color: #0d0d0d;
+    --text-color: #e0e0e0;
+    --matrix-green: #39ff14;
+    --matrix-blue: #00bfff;
+    --matrix-pink: #ff00ff;
+    --matrix-orange: #ff8c00;
+    --card-bg: #1a1a1a;
+    --font-pixel: 'VT323', monospace;
+}
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-    color: #e0e6ed;
-    min-height: 100vh;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-pixel);
+    font-size: 20px;
+    line-height: 1.6;
+    overscroll-behavior-y: contain; /* Mobilde sayfa yenilemesini engeller */
 }
 
-.app-container {
-    min-height: 100vh;
-    position: relative;
-}
-
-/* Header Styles */
-.header {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.app-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.5rem;
-}
-
-.app-subtitle {
-    font-size: 0.9rem;
-    color: #a0a9ba;
-    font-weight: 300;
-}
-
-/* Screen Management */
-.screen {
-    display: none;
-    min-height: calc(100vh - 120px);
-    padding: 1rem;
-}
-
-.screen.active {
-    display: block;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Dashboard Styles */
-.dashboard-container {
+.container {
+    width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 20px;
 }
 
-.dashboard-title {
+/* --- Ana Menü Sayfası (index.html) --- */
+
+.app-header {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: #e0e6ed;
-    font-weight: 600;
+    padding: 40px 20px;
+    border-bottom: 2px solid var(--matrix-green);
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px var(--matrix-green);
 }
 
-.word-sets-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
+.app-header h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
 }
 
-.word-set-btn {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 1.2rem;
-    color: #e0e6ed;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.lektion-menu ul {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    position: relative;
-    overflow: hidden;
+    gap: 15px;
 }
 
-.word-set-btn::before {
-    content: '';
-    position: absolute;
+.lektion-menu a {
+    display: block;
+    background-color: transparent;
+    border: 2px solid var(--matrix-green);
+    color: var(--matrix-green);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.8em;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.lektion-menu a:hover {
+    background-color: var(--matrix-green);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px var(--matrix-green);
+}
+
+
+/* --- Kelime Akışı Sayfası (lektionX.html) --- */
+
+.lektion-container {
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    /* Bu özellik scroll'un kartlara kilitlenmesini sağlar */
+    scroll-snap-type: y mandatory;
+}
+
+.lektion-header {
+    position: fixed;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    transition: left 0.5s ease;
+    padding: 15px 20px;
+    background-color: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    border-bottom: 1px solid var(--matrix-green);
 }
 
-.word-set-btn:hover::before {
-    left: 100%;
+.back-button {
+    color: var(--matrix-green);
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
-.word-set-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    border-color: rgba(79, 172, 254, 0.5);
+.back-button:hover {
+    text-decoration: underline;
 }
 
-.word-set-btn.active {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    color: #0f0f23;
-    font-weight: 600;
-}
-
-.word-set-btn.disabled {
-    background: linear-gradient(135deg, #2a2a3e 0%, #3a3a4e 100%);
-    color: #6a6a7a;
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.word-set-btn.disabled:hover {
-    transform: none;
-    box-shadow: none;
-}
-
-.set-number {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.set-name {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-}
-
-.set-description {
-    font-size: 0.8rem;
-    opacity: 0.8;
-}
-
-.start-game-btn {
+.card {
+    height: 100vh; /* Her kart tam ekran yüksekliğinde */
     width: 100%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border: none;
-    border-radius: 12px;
-    padding: 1rem 2rem;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.start-game-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-}
-
-.start-game-btn:active {
-    transform: translateY(0);
-}
-
-/* Game Screen Styles */
-.game-container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-.game-header {
+    padding: 20px;
+    padding-top: 80px; /* Header için boşluk */
+    scroll-snap-align: start; /* Scroll'un kartın başına kilitlenmesini sağlar */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
-    padding: 0 0.5rem;
-}
-
-.back-btn, .shuffle-btn {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 0.7rem 1rem;
-    color: #e0e6ed;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.back-btn:hover, .shuffle-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-1px);
-}
-
-.progress-info {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #4facfe;
-}
-
-/* Card Styles */
-.card-container {
-    perspective: 1000px;
-    margin-bottom: 2rem;
-}
-
-.vocabulary-card {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    /* Remove cursor pointer since card no longer clickable */
-}
-
-.card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
     text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+    cursor: pointer;
+    border-bottom: 2px dashed #444;
 }
 
-.vocabulary-card.flipped .card-inner {
-    transform: rotateY(180deg);
+/* Farklı kart renkleri */
+.card:nth-child(4n+1) { border-left: 5px solid var(--matrix-green); }
+.card:nth-child(4n+2) { border-left: 5px solid var(--matrix-blue); }
+.card:nth-child(4n+3) { border-left: 5px solid var(--matrix-pink); }
+.card:nth-child(4n+4) { border-left: 5px solid var(--matrix-orange); }
+
+.card .kelime {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #fff;
 }
 
-.card-front, .card-back {
+.card .details {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card.active .details {
+    display: block;
+    opacity: 1;
+}
+
+.card .anlami {
+    font-size: 1.8em;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.card .ornek-cumle {
+    font-size: 1.4em;
+    background-color: #222;
+    padding: 15px;
+    border-left: 3px solid var(--text-color);
+}
+
+.click-hint {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    bottom: 30px;
+    font-size: 1em;
+    color: #888;
+    animation: pulse 2s infinite;
 }
 
-.card-front {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+.card.active .click-hint {
+    display: none;
 }
 
-.card-back {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    color: white;
-    transform: rotateY(180deg);
-}
-
-.card-content {
-    width: 100%;
-}
-
-.german-word {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-.turkish-meaning {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    line-height: 1.3;
-}
-
-.example-sentence {
-    font-size: 1rem;
-    font-style: italic;
-    opacity: 0.9;
-    margin-bottom: 1rem;
-    line-height: 1.4;
-}
-
-.tap-hint {
-    font-size: 0.8rem;
-    opacity: 0.7;
-    margin-top: 1rem;
-}
-
-/* Flip Button Styles */
-.flip-button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.flip-btn {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-    border: none;
-    border-radius: 50px;
-    padding: 1rem 2rem;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
-    min-height: 50px;
-    min-width: 140px;
-    justify-content: center;
-}
-
-.flip-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
-}
-
-.flip-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
-}
-
-.flip-btn-text {
-    font-weight: 600;
-}
-
-.flip-btn-icon {
-    font-size: 1.1rem;
-    transition: transform 0.3s ease;
-}
-
-.flip-btn:hover .flip-btn-icon {
-    transform: rotate(180deg);
-}
-
-/* Navigation Controls */
-.navigation-controls {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.nav-btn {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 0.8rem 1.5rem;
-    color: #e0e6ed;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.nav-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-1px);
-}
-
-.nav-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.nav-btn:disabled:hover {
-    transform: none;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-/* Game Stats */
-.game-stats {
-    display: flex;
-    justify-content: space-around;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.stat-item {
-    text-align: center;
-}
-
-.stat-label {
-    display: block;
-    font-size: 0.8rem;
-    color: #a0a9ba;
-    margin-bottom: 0.3rem;
-}
-
-.stat-value {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #4facfe;
-}
-
-/* Mobile Optimizations */
-@media (max-width: 768px) {
-    .header {
-        padding: 1rem;
-    }
-    
-    .app-title {
-        font-size: 1.5rem;
-    }
-    
-    .word-sets-grid {
-        grid-template-columns: 1fr;
-        gap: 0.8rem;
-    }
-    
-    .word-set-btn {
-        padding: 1rem;
-    }
-    
-    .vocabulary-card {
-        height: 280px;
-    }
-    
-    .german-word {
-        font-size: 1.5rem;
-    }
-    
-    .turkish-meaning {
-        font-size: 1.1rem;
-    }
-    
-    .example-sentence {
-        font-size: 0.9rem;
-    }
-    
-    .game-header {
-        margin-bottom: 1.5rem;
-    }
-    
-    .navigation-controls {
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-    
-    .game-stats {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    /* Mobile-optimized flip button */
-    .flip-btn {
-        padding: 1.2rem 2.5rem;
-        font-size: 1.1rem;
-        min-height: 56px;
-        min-width: 160px;
-    }
-    
-    .flip-button-container {
-        margin-top: 1.2rem;
-        margin-bottom: 1.2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .screen {
-        padding: 0.5rem;
-    }
-    
-    .dashboard-container, .game-container {
-        padding: 0.5rem;
-    }
-    
-    .vocabulary-card {
-        height: 250px;
-    }
-    
-    .card-front, .card-back {
-        padding: 1.5rem;
-    }
-    
-    .german-word {
-        font-size: 1.3rem;
-    }
-    
-    .turkish-meaning {
-        font-size: 1rem;
-    }
-    
-    .example-sentence {
-        font-size: 0.85rem;
-    }
-}
-
-/* Touch Interactions */
-@media (hover: none) and (pointer: coarse) {
-    .word-set-btn:hover,
-    .start-game-btn:hover,
-    .back-btn:hover,
-    .shuffle-btn:hover,
-    .nav-btn:hover,
-    .flip-btn:hover {
-        transform: none;
-    }
-    
-    .word-set-btn:active,
-    .start-game-btn:active,
-    .back-btn:active,
-    .shuffle-btn:active,
-    .nav-btn:active,
-    .flip-btn:active {
-        transform: scale(0.98);
-    }
-    
-    .flip-btn:hover .flip-btn-icon {
-        transform: none;
-    }
-}
-
-/* Loading Animation */
 @keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
 }
-
-.loading {
-    animation: pulse 1.5s ease-in-out infinite;
-}
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-    
-    .card-inner {
-        transition: none;
-    }
-}
-

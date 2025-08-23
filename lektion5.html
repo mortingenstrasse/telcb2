@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lektion 5 - Kelimeler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="lektion-header">
+        <a href="index.html" class="back-button">&lt;-- ZURÜCK</a>
+    </header>
+    
+    <main id="vocabulary-list" class="lektion-container">
+        <!-- Kelime kartları JavaScript ile buraya eklenecek -->
+    </main>
+    
+    <!-- İLGİLİ JS DOSYASINI BURADA ÇAĞIRIYORUZ -->
+    <script src="bild5.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const vocabularyList = document.getElementById('vocabulary-list');
+
+            // --> YENİ EKLENEN KOD BAŞLANGICI
+            /**
+             * Fisher-Yates (aka Knuth) Shuffle algoritmasını kullanarak bir diziyi yerinde karıştırır.
+             * @param {Array} array Karıştırılacak dizi.
+             */
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    // 0 ile i arasında rastgele bir dizin seç
+                    const j = Math.floor(Math.random() * (i + 1));
+                    // Seçilen dizindeki elemanla mevcut elemanı yer değiştir
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+            }
+            // --> YENİ EKLENEN KOD SONU
+
+            // bild1.js dosyasındaki 'lektionData' değişkenini kontrol et
+            if (typeof lektionData !== 'undefined' && lektionData.length > 0) {
+                
+                // --> YENİ EKLENEN KOD: Diziyi HTML'e basmadan önce karıştır
+                shuffleArray(lektionData);
+
+                lektionData.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    
+                    card.innerHTML = `
+                        <h2 class="kelime">${item.kelime}</h2>
+                        <div class="details">
+                            <p class="anlami">${item.anlami}</p>
+                            <p class="ornek-cumle">"${item.ornekCumle}"</p>
+                        </div>
+                        <span class="click-hint">// ANLAMI GÖRMEK İÇİN TIKLA</span>
+                    `;
+                    
+                    vocabularyList.appendChild(card);
+                });
+
+            } else {
+                vocabularyList.innerHTML = '<div class="card"><h2 class="kelime">Daten nicht gefunden.</h2></div>';
+            }
+
+            // Kartlara tıklama olayı ekle (event delegation)
+            vocabularyList.addEventListener('click', (e) => {
+                const card = e.target.closest('.card');
+                if (card) {
+                    card.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

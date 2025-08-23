@@ -1,4 +1,8 @@
-const bild1_words = [
+// DOSYANIN EN BAŞINA BU SATIRI EKLEYİN
+const lektionData = 
+
+
+[
   // BÖLÜM 1: Freizeit versus Arbeitszeit
   {
     kelime: "die Anekdote",
