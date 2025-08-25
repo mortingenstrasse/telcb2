@@ -1094,5 +1094,1199 @@ const lektionData =
     kelime: "die Einheit",
     anlami: "ünite",
     ornekCumle: "In der nächsten Einheit lernen wir neue Vokabeln."
+  },
+
+  {
+    kelime: "der Abfall",
+    anlami: "çöp, atık",
+    ornekCumle: "Bitte werfen Sie den Abfall in den dafür vorgesehenen Behälter."
+  },
+  {
+    kelime: "der Abflug",
+    anlami: "kalkış (uçak)",
+    ornekCumle: "Unser Abflug nach Istanbul ist für 14:30 Uhr geplant."
+  },
+  {
+    kelime: "die Absage",
+    anlami: "iptal, ret",
+    ornekCumle: "Leider haben wir eine Absage für unsere Hotelbuchung erhalten."
+  },
+  {
+    kelime: "aktiv",
+    anlami: "aktif, faal",
+    ornekCumle: "Im Urlaub sind wir gerne aktiv und gehen viel wandern."
+  },
+  {
+    kelime: "der Alkohol",
+    anlami: "alkol",
+    ornekCumle: "Im Flugzeug sollte man nicht zu viel Alkohol trinken."
+  },
+  {
+    kelime: "angenehm",
+    anlami: "hoş, keyifli",
+    ornekCumle: "Wir hatten eine sehr angenehme Reise ohne Verspätungen."
+  },
+  {
+    kelime: "annulliert",
+    anlami: "iptal edilmiş",
+    ornekCumle: "Wegen des Streiks wurde unser Flug leider annulliert."
+  },
+  {
+    kelime: "die Anzeigetafel",
+    anlami: "gösterge panosu, tabela",
+    ornekCumle: "Auf der Anzeigetafel im Flughafen sehen Sie alle Abflüge und Ankünfte."
+  },
+  {
+    kelime: "der Aufruf",
+    anlami: "çağrı, anons",
+    ornekCumle: "Bitte achten Sie auf den letzten Aufruf für den Flug LH1800."
+  },
+  {
+    kelime: "der Ausgang",
+    anlami: "çıkış",
+    ornekCumle: "Der Ausgang zum Gate B25 befindet sich am Ende des Ganges."
+  },
+  {
+    kelime: "die Ausstattung",
+    anlami: "donanım, ekipman, tesisat",
+    ornekCumle: "Die Ausstattung des Hotelzimmers war sehr modern und komfortabel."
+  },
+  {
+    kelime: "der Behälter",
+    anlami: "kap, konteyner",
+    ornekCumle: "Flüssigkeiten dürfen nur in einem durchsichtigen Behälter mit ins Handgepäck."
+  },
+  {
+    kelime: "betreten",
+    anlami: "girmek, ayak basmak",
+    ornekCumle: "Das Betreten der Start- und Landebahn ist strengstens verboten."
+  },
+  {
+    kelime: "der/die Bewohner/in",
+    anlami: "(erkek/kadın) sakin, oturan kişi",
+    ornekCumle: "Die Bewohner des Hostels kamen aus vielen verschiedenen Ländern."
+  },
+  {
+    kelime: "die Bordkarte",
+    anlami: "biniş kartı",
+    ornekCumle: "Bitte halten Sie Ihre Bordkarte und Ihren Ausweis bereit."
+  },
+  {
+    kelime: "der/die Camper/in",
+    anlami: "kampçı",
+    ornekCumle: "Als Camper lieben wir die Freiheit, jeden Tag an einem anderen Ort zu sein."
+  },
+  {
+    kelime: "der Campingplatz",
+    anlami: "kamp alanı",
+    ornekCumle: "Dieser Campingplatz liegt direkt am Meer und hat einen tollen Strand."
+  },
+  {
+    kelime: "der Check-in-Schalter",
+    anlami: "check-in kontuarı",
+    ornekCumle: "Der Check-in-Schalter für unseren Flug schließt in 20 Minuten."
+  },
+  {
+    kelime: "der Container",
+    anlami: "konteyner",
+    ornekCumle: "Für den Müll gibt es auf dem Campingplatz verschiedene Container."
+  },
+  {
+    kelime: "die Dienstreise",
+    anlami: "iş seyahati",
+    ornekCumle: "Nächste Woche muss ich auf eine Dienstreise nach Frankfurt."
+  },
+  {
+    kelime: "das Doppelbett",
+    anlami: "çift kişilik yatak",
+    ornekCumle: "Wir haben ein Zimmer mit einem großen Doppelbett gebucht."
+  },
+  {
+    kelime: "das Doppelzimmer (DZ)",
+    anlami: "çift kişilik oda",
+    ornekCumle: "Ein Doppelzimmer für zwei Nächte kostet 180 Euro."
+  },
+  {
+    kelime: "einchecken",
+    anlami: "check-in yapmak",
+    ornekCumle: "Wir können online einchecken, um Zeit am Flughafen zu sparen."
+  },
+  {
+    kelime: "die Einsteigezeit",
+    anlami: "biniş zamanı",
+    ornekCumle: "Die Einsteigezeit für unseren Flug beginnt um 18:00 Uhr."
+  },
+  {
+    kelime: "das Einzelzimmer (EZ)",
+    anlami: "tek kişilik oda",
+    ornekCumle: "Da ich alleine reise, habe ich ein Einzelzimmer reserviert."
+  },
+  {
+    kelime: "erleben",
+    anlami: "deneyimlemek, yaşamak",
+    ornekCumle: "Auf unserer Reise wollten wir die lokale Kultur hautnah erleben."
+  },
+  {
+    kelime: "der Flug",
+    anlami: "uçuş",
+    ornekCumle: "Der Flug von München nach Rom dauert etwa eineinhalb Stunden."
+  },
+  {
+    kelime: "der/die Flugbegleiter/in",
+    anlami: "uçuş görevlisi, hostes/host",
+    ornekCumle: "Die Flugbegleiterin war sehr freundlich und hilfsbereit."
+  },
+  {
+    kelime: "der Fluggast",
+    anlami: "yolcu (uçak)",
+    ornekCumle: "Jeder Fluggast darf nur ein Handgepäckstück mit an Bord nehmen."
+  },
+  {
+    kelime: "die Fluggesellschaft",
+    anlami: "havayolu şirketi",
+    ornekCumle: "Mit welcher Fluggesellschaft fliegen Sie am liebsten?"
+  },
+  {
+    kelime: "führen",
+    anlami: "yol göstermek, götürmek",
+    ornekCumle: "Dieser Weg führt direkt zum Strand."
+  },
+  {
+    kelime: "füttern",
+    anlami: "beslemek",
+    ornekCumle: "Es ist verboten, die wilden Tiere im Nationalpark zu füttern."
+  },
+  {
+    kelime: "das Gate",
+    anlami: "biniş kapısı",
+    ornekCumle: "Unser Flug startet von Gate A12."
+  },
+  {
+    kelime: "das Gepäck",
+    anlami: "bagaj",
+    ornekCumle: "Nach der Landung müssen wir unser Gepäck am Gepäckband abholen."
+  },
+  {
+    kelime: "die Gepäckausgabe",
+    anlami: "bagaj alım yeri",
+    ornekCumle: "Die Gepäckausgabe befindet sich in der Ankunftshalle."
+  },
+  {
+    kelime: "das Gepäckband",
+    anlami: "bagaj bandı",
+    ornekCumle: "Ich warte schon seit 20 Minuten am Gepäckband auf meinen Koffer."
+  },
+  {
+    kelime: "gestattet sein",
+    anlami: "izinli olmak",
+    ornekCumle: "Das Rauchen ist im gesamten Flughafengebäude nicht gestattet."
+  },
+  {
+    kelime: "die Halbpension (HP)",
+    anlami: "yarım pansiyon",
+    ornekCumle: "Wir haben das Hotel mit Halbpension gebucht, also mit Frühstück und Abendessen."
+  },
+  {
+    kelime: "das Handgepäck",
+    anlami: "el bagajı",
+    ornekCumle: "Wichtige Dokumente und Medikamente sollte man immer im Handgepäck haben."
+  },
+  {
+    kelime: "historisch",
+    anlami: "tarihi",
+    ornekCumle: "Die Altstadt hat viele historische Gebäude aus dem Mittelalter."
+  },
+  {
+    kelime: "das Hostel",
+    anlami: "hostel, pansiyon",
+    ornekCumle: "In einem Hostel kann man günstig übernachten und lernt leicht neue Leute kennen."
+  },
+  {
+    kelime: "hygienisch",
+    anlami: "hijyenik",
+    ornekCumle: "Die Gemeinschaftsbäder auf dem Campingplatz waren sehr sauber und hygienisch."
+  },
+  {
+    kelime: "das Inlineskaten",
+    anlami: "paten kayma",
+    ornekCumle: "Am Strandweg kann man wunderbar Inlineskaten."
+  },
+  {
+    kelime: "die Jugendherberge",
+    anlami: "gençlik yurdu",
+    ornekCumle: "Mit der Schulklasse haben wir in einer Jugendherberge in den Bergen übernachtet."
+  },
+  {
+    kelime: "der Katalog",
+    anlami: "katalog",
+    ornekCumle: "Wir haben uns im Reisebüro verschiedene Kataloge für Sommerreisen angesehen."
+  },
+  {
+    kelime: "klettern",
+    anlami: "tırmanmak",
+    ornekCumle: "Im Urlaub in den Alpen wollen wir auf einen Berg klettern."
+  },
+  {
+    kelime: "komfortabel",
+    anlami: "konforlu, rahat",
+    ornekCumle: "Das Hotelbett war extrem komfortabel, ich habe sehr gut geschlafen."
+  },
+  {
+    kelime: "die Lage",
+    anlami: "konum, yer",
+    ornekCumle: "Die Lage des Hotels ist perfekt, direkt im Stadtzentrum."
+  },
+  {
+    kelime: "das Lagerfeuer",
+    anlami: "kamp ateşi",
+    ornekCumle: "Abends saßen wir alle zusammen am Lagerfeuer und sangen Lieder."
+  },
+  {
+    kelime: "landen",
+    anlami: "iniş yapmak (uçak)",
+    ornekCumle: "Wir werden voraussichtlich pünktlich in Frankfurt landen."
+  },
+  {
+    kelime: "der Lärm",
+    anlami: "gürültü",
+    ornekCumle: "Der Lärm von der Baustelle neben dem Hotel war sehr störend."
+  },
+  {
+    kelime: "die Lautsprecherdurchsage",
+    anlami: "hoparlör anonsu",
+    ornekCumle: "Bitte achten Sie auf die Lautsprecherdurchsagen am Bahnhof."
+  },
+  {
+    kelime: "lebhaft",
+    anlami: "canlı, hareketli",
+    ornekCumle: "Die Stadt hat ein sehr lebhaftes Nachtleben mit vielen Bars und Clubs."
+  },
+  {
+    kelime: "die Leine",
+    anlami: "tasma, ip",
+    ornekCumle: "Hunde müssen auf dem Campingplatz an der Leine geführt werden."
+  },
+  {
+    kelime: "der Leuchtturm",
+    anlami: "deniz feneri",
+    ornekCumle: "Von der Spitze des Leuchtturms hat man eine fantastische Aussicht auf das Meer."
+  },
+  {
+    kelime: "der Meerblick",
+    anlami: "deniz manzarası",
+    ornekCumle: "Wir haben extra ein Zimmer mit Meerblick gebucht."
+  },
+  {
+    kelime: "mitten",
+    anlami: "ortasında",
+    ornekCumle: "Das Hotel liegt mitten in der historischen Altstadt."
+  },
+  {
+    kelime: "der Nebel",
+    anlami: "sis",
+    ornekCumle: "Wegen dichtem Nebel konnten die Flugzeuge nicht starten."
+  },
+  {
+    kelime: "neblig",
+    anlami: "sisli",
+    ornekCumle: "An der Küste ist es morgens oft sehr neblig."
+  },
+  {
+    kelime: "das Paradies",
+    anlami: "cennet",
+    ornekCumle: "Mit seinem weißen Sand und dem türkisen Wasser war dieser Strand ein wahres Paradies."
+  },
+  {
+    kelime: "der/die Passagier/in",
+    anlami: "yolcu",
+    ornekCumle: "Alle Passagiere müssen während des Starts und der Landung angeschnallt bleiben."
+  },
+  {
+    kelime: "die Passkontrolle",
+    anlami: "pasaport kontrolü",
+    ornekCumle: "Nach der Landung mussten wir noch durch die Passkontrolle."
+  },
+  {
+    kelime: "der Pilotenstreik",
+    anlami: "pilot grevi",
+    ornekCumle: "Wegen eines Pilotenstreiks wurden viele Flüge gestrichen."
+  },
+  {
+    kelime: "der Pool",
+    anlami: "havuz",
+    ornekCumle: "Nach dem Sonnenbaden sind wir zur Abkühlung in den Pool gesprungen."
+  },
+  {
+    kelime: "rechtzeitig",
+    anlami: "zamanında, vaktinde",
+    ornekCumle: "Wir müssen rechtzeitig am Flughafen sein, um unseren Flug nicht zu verpassen."
+  },
+  {
+    kelime: "das Reisebüro",
+    anlami: "seyahat acentesi",
+    ornekCumle: "Wir haben unsere Pauschalreise in einem Reisebüro gebucht."
+  },
+  {
+    kelime: "der Reiseplan",
+    anlami: "seyahat planı",
+    ornekCumle: "Für unsere Rundreise durch Italien haben wir einen detaillierten Reiseplan erstellt."
+  },
+  {
+    kelime: "die Reiseplanung",
+    anlami: "seyahat planlaması",
+    ornekCumle: "Die Reiseplanung hat mehrere Wochen gedauert."
+  },
+  {
+    kelime: "reiten",
+    anlami: "ata binmek",
+    ornekCumle: "Im Urlaub am Strand kann man auf Pferden reiten."
+  },
+  {
+    kelime: "die Ruhezeit",
+    anlami: "dinlenme süresi, sessiz zaman",
+    ornekCumle: "Auf dem Campingplatz gilt eine Ruhezeit von 22 Uhr bis 7 Uhr."
+  },
+  {
+    kelime: "sauber",
+    anlami: "temiz",
+    ornekCumle: "Das Hotelzimmer war sehr sauber und ordentlich."
+  },
+  {
+    kelime: "die Sauberkeit",
+    anlami: "temizlik",
+    ornekCumle: "In diesem Hotel wird großer Wert auf Sauberkeit gelegt."
+  },
+  {
+    kelime: "der Schalter",
+    anlami: "gişe, kontuar",
+    ornekCumle: "Informationen erhalten Sie am Schalter in der Haupthalle."
+  },
+  {
+    kelime: "die Schlange",
+    anlami: "kuyruk, sıra",
+    ornekCumle: "Die Schlange vor der Sicherheitskontrolle war sehr lang."
+  },
+  {
+    kelime: "der Sonnenschirm",
+    anlami: "güneş şemsiyesi",
+    ornekCumle: "Am Strand haben wir einen Sonnenschirm gemietet."
+  },
+  {
+    kelime: "die Sonnenterrasse",
+    anlami: "güneşlenme terası",
+    ornekCumle: "Das Café hat eine große Sonnenterrasse mit Blick auf den See."
+  },
+  {
+    kelime: "der Sonnenuntergang",
+    anlami: "gün batımı",
+    ornekCumle: "Wir haben uns den romantischen Sonnenuntergang am Meer angesehen."
+  },
+  {
+    kelime: "der Stern",
+    anlami: "yıldız",
+    ornekCumle: "In den Bergen kann man nachts die Sterne besonders gut sehen."
+  },
+  {
+    kelime: "stören",
+    anlami: "rahatsız etmek",
+    ornekCumle: "Bitte stören Sie die anderen Gäste während der Ruhezeit nicht."
+  },
+  {
+    kelime: "das Streichholz",
+    anlami: "kibrit",
+    ornekCumle: "Hast du ein Streichholz, um das Lagerfeuer anzuzünden?"
+  },
+  {
+    kelime: "streiken",
+    anlami: "grev yapmak",
+    ornekCumle: "Die Piloten streiken für bessere Arbeitsbedingungen."
+  },
+  {
+    kelime: "die Taschenlampe",
+    anlami: "el feneri",
+    ornekCumle: "Nachts auf dem Campingplatz braucht man eine Taschenlampe."
+  },
+  {
+    kelime: "das Taschenmesser",
+    anlami: "çakı",
+    ornekCumle: "Ein Taschenmesser ist beim Campen sehr nützlich."
+  },
+  {
+    kelime: "traumhaft",
+    anlami: "rüya gibi, harika",
+    ornekCumle: "Wir hatten traumhaftes Wetter während unseres gesamten Urlaubs."
+  },
+  {
+    kelime: "übernachten",
+    anlami: "gecelemek",
+    ornekCumle: "Wir werden eine Nacht in einem Hotel übernachten und dann weiterfahren."
+  },
+  {
+    kelime: "die Übernachtung",
+    anlami: "konaklama",
+    ornekCumle: "Die Übernachtung im Doppelzimmer kostet 90 Euro."
+  },
+  {
+    kelime: "die Übernachtung mit Frühstück (ÜF)",
+    anlami: "oda kahvaltı konaklama",
+    ornekCumle: "Wir haben nur Übernachtung mit Frühstück gebucht."
+  },
+  {
+    kelime: "die Umgebung",
+    anlami: "çevre, civar",
+    ornekCumle: "Die Umgebung des Hotels ist sehr ruhig und grün."
+  },
+  {
+    kelime: "umgehend",
+    anlami: "derhal, hemen",
+    ornekCumle: "Bitte begeben Sie sich umgehend zu Ihrem Gate."
+  },
+  {
+    kelime: "verärgert",
+    anlami: "kızgın, sinirli",
+    ornekCumle: "Die Passagiere waren verärgert über die lange Verspätung."
+  },
+  {
+    kelime: "verreisen",
+    anlami: "seyahate çıkmak",
+    ornekCumle: "In den Sommerferien verreisen wir immer ans Meer."
+  },
+  {
+    kelime: "verschieben",
+    anlami: "ertelemek",
+    ornekCumle: "Wegen schlechten Wetters mussten wir unseren Ausflug verschieben."
+  },
+  {
+    kelime: "der Wanderer",
+    anlami: "doğa yürüyüşçüsü",
+    ornekCumle: "Die Wanderer machten eine Pause auf dem Gipfel des Berges."
+  },
+  {
+    kelime: "die Wandertour",
+    anlami: "doğa yürüyüşü turu",
+    ornekCumle: "Morgen machen wir eine geführte Wandertour durch den Nationalpark."
+  },
+  {
+    kelime: "der Waschraum",
+    anlami: "tuvalet, lavabo odası",
+    ornekCumle: "Der Waschraum auf dem Campingplatz wird täglich gereinigt."
+  },
+  {
+    kelime: "der Wohnwagen",
+    anlami: "karavan",
+    ornekCumle: "Wir reisen am liebsten mit unserem eigenen Wohnwagen."
+  },
+  {
+    kelime: "das Zelt",
+    anlami: "çadır",
+    ornekCumle: "Bei Regen mussten wir schnell unser Zelt aufbauen."
+  },
+  {
+    kelime: "der Zoll",
+    anlami: "gümrük",
+    ornekCumle: "Am Flughafen mussten wir durch den Zoll gehen."
+  },
+  {
+    kelime: "der Zuschlag",
+    anlami: "ek ücret",
+    ornekCumle: "Für die Reservierung eines Sitzplatzes am Fenster wird ein Zuschlag erhoben."
+  },
+  // Lektion 2: Liebe Nachbarn ...
+  {
+    kelime: "absprechen",
+    anlami: "kararlaştırmak, anlaşmak",
+    ornekCumle: "Wir müssen uns absprechen, wer diese Woche den Hausflur putzt."
+  },
+  {
+    kelime: "der Abstellplatz",
+    anlami: "park yeri, depolama alanı",
+    ornekCumle: "Fahrräder müssen auf dem dafür vorgesehenen Abstellplatz geparkt werden."
+  },
+  {
+    kelime: "akzeptieren",
+    anlami: "kabul etmek",
+    ornekCumle: "Man muss akzeptieren, dass Nachbarn manchmal Lärm machen."
+  },
+  {
+    kelime: "anstreichen",
+    anlami: "boyamak",
+    ornekCumle: "Ich möchte die Wände in meinem Wohnzimmer neu anstreichen."
+  },
+  {
+    kelime: "der Ärger",
+    anlami: "kızgınlık, sıkıntı",
+    ornekCumle: "Ich möchte keinen Ärger mit meinen Nachbarn haben."
+  },
+  {
+    kelime: "ärgerlich",
+    anlami: "sinir bozucu, can sıkıcı",
+    ornekCumle: "Es ist ärgerlich, wenn die Nachbarn nachts laut sind."
+  },
+  {
+    kelime: "die Aufregung",
+    anlami: "heyecan, telaş",
+    ornekCumle: "Die laute Party verursachte große Aufregung im ganzen Haus."
+  },
+  {
+    kelime: "die Ausnahme",
+    anlami: "istisna",
+    ornekCumle: "Normalerweise ist es hier ruhig, die Party gestern war eine Ausnahme."
+  },
+  {
+    kelime: "das Balkongeländer",
+    anlami: "balkon korkuluğu",
+    ornekCumle: "Bitte hängen Sie keine Wäsche über das Balkongeländer."
+  },
+  {
+    kelime: "befestigen",
+    anlami: "sabitlemek, bağlamak",
+    ornekCumle: "Ich muss das Regal sicher an der Wand befestigen."
+  },
+  {
+    kelime: "behalten",
+    anlami: "saklamak, tutmak",
+    ornekCumle: "Kann ich dieses Buch noch eine Woche behalten?"
+  },
+  {
+    kelime: "beleidigen",
+    anlami: "hakaret etmek, gücendirmek",
+    ornekCumle: "Man sollte seine Nachbarn niemals beleidigen, auch wenn man sich streitet."
+  },
+  {
+    kelime: "die Beleidigung",
+    anlami: "hakaret",
+    ornekCumle: "Eine laute Beschwerde ist keine Beleidigung."
+  },
+  {
+    kelime: "berechtigt",
+    anlami: "haklı, yetkili",
+    ornekCumle: "Seine Beschwerde über den Lärm war absolut berechtigt."
+  },
+  {
+    kelime: "beschimpfen",
+    anlami: "küfretmek, hakaret etmek",
+    ornekCumle: "Der Nachbar hat mich laut beschimpft."
+  },
+  {
+    kelime: "die Beschimpfung",
+    anlami: "küfür, hakaret",
+    ornekCumle: "Beschimpfungen lösen keine Probleme."
+  },
+  {
+    kelime: "sich beschweren",
+    anlami: "şikayet etmek",
+    ornekCumle: "Wenn die Musik zu laut ist, werde ich mich beim Vermieter beschweren."
+  },
+  {
+    kelime: "der Blumentopf",
+    anlami: "saksı",
+    ornekCumle: "Bitte stellen Sie Blumentöpfe auf dem Balkon so auf, dass sie nicht herunterfallen können."
+  },
+  {
+    kelime: "bohren",
+    anlami: "delmek (matkapla)",
+    ornekCumle: "Darf ich sonntags in der Wohnung bohren?"
+  },
+  {
+    kelime: "deswegen",
+    anlami: "bu yüzden, bu nedenle",
+    ornekCumle: "Er hat laut Musik gehört, deswegen habe ich mich beschwert."
+  },
+  {
+    kelime: "dumm",
+    anlami: "aptal, aptalca",
+    ornekCumle: "Es war dumm von mir, den Schlüssel in der Wohnung zu vergessen."
+  },
+  {
+    kelime: "eilig",
+    anlami: "acele, acil",
+    ornekCumle: "Ich habe es eilig, ich muss schnell zum Bahnhof."
+  },
+  {
+    kelime: "einhalten",
+    anlami: "uymak (kurala, zamana)",
+    ornekCumle: "Alle Mieter müssen die Hausordnung einhalten."
+  },
+  {
+    kelime: "einlegen",
+    anlami: "koymak, yerleştirmek",
+    ornekCumle: "Können Sie bitte eine Pause einlegen?"
+  },
+  {
+    kelime: "einstellen",
+    anlami: "ayarlamak, durdurmak",
+    ornekCumle: "Bitte stellen Sie die laute Musik ein."
+  },
+  {
+    kelime: "enden",
+    anlami: "bitmek, sona ermek",
+    ornekCumle: "Die Party endete erst um 3 Uhr morgens."
+  },
+  {
+    kelime: "die Entscheidung",
+    anlami: "karar",
+    ornekCumle: "Es war eine schwere Entscheidung, umzuziehen."
+  },
+  {
+    kelime: "entspannend",
+    anlami: "rahatlatıcı, dinlendirici",
+    ornekCumle: "Ein warmes Bad nach einem langen Tag ist sehr entspannend."
+  },
+  {
+    kelime: "entsprechen",
+    anlami: "uymak, denk gelmek",
+    ornekCumle: "Die Wohnung entspricht genau unseren Vorstellungen."
+  },
+  {
+    kelime: "erhöhen",
+    anlami: "arttırmak, yükseltmek",
+    ornekCumle: "Der Vermieter will die Miete erhöhen."
+  },
+  {
+    kelime: "erleichtern",
+    anlami: "kolaylaştırmak, hafifletmek",
+    ornekCumle: "Ein Aufzug würde den Alltag für die älteren Bewohner sehr erleichtern."
+  },
+  {
+    kelime: "erwähnen",
+    anlami: "bahsetmek, anmak",
+    ornekCumle: "Habe ich erwähnt, dass ich neue Nachbarn habe?"
+  },
+  {
+    kelime: "eskalieren",
+    anlami: "tırmanmak, kızışmak (tartışma)",
+    ornekCumle: "Der Streit zwischen den Nachbarn ist gestern eskaliert."
+  },
+  {
+    kelime: "exotisch",
+    anlami: "egzotik",
+    ornekCumle: "Sie kocht gerne exotische Gerichte aus Thailand."
+  },
+  {
+    kelime: "fair",
+    anlami: "adil",
+    ornekCumle: "Es ist nur fair, dass sich alle an die Regeln halten."
+  },
+  {
+    kelime: "festkleben",
+    anlami: "yapıştırmak",
+    ornekCumle: "Bitte keine Zettel an die Haustür festkleben."
+  },
+  {
+    kelime: "die Freude",
+    anlami: "sevinç, neşe",
+    ornekCumle: "Es ist eine Freude, so nette Nachbarn zu haben."
+  },
+  {
+    kelime: "die Frist",
+    anlami: "süre, mühlet",
+    ornekCumle: "Die Frist für die Nebenkostenabrechnung ist Ende des Monats."
+  },
+  {
+    kelime: "fristgerecht",
+    anlami: "süresinde, vadesinde",
+    ornekCumle: "Bitte zahlen Sie die Miete immer fristgerecht."
+  },
+  {
+    kelime: "fristlos",
+    anlami: "derhal, süresiz",
+    ornekCumle: "Bei wiederholter Störung kann der Mietvertrag fristlos gekündigt werden."
+  },
+  {
+    kelime: "der Gemeinschaftsraum",
+    anlami: "ortak alan",
+    ornekCumle: "Der Gemeinschaftsraum im Keller kann für Feiern gemietet werden."
+  },
+  {
+    kelime: "gesetzlich",
+    anlami: "yasal, kanuni",
+    ornekCumle: "Die Nachtruhe ist gesetzlich von 22 bis 6 Uhr vorgeschrieben."
+  },
+  {
+    kelime: "hämmern",
+    anlami: "çekiçle vurmak",
+    ornekCumle: "Mein Nachbar hat den ganzen Samstag gehämmert und gebohrt."
+  },
+  {
+    kelime: "heizen",
+    anlami: "ısıtmak",
+    ornekCumle: "Im Winter müssen wir die Wohnung gut heizen."
+  },
+  {
+    kelime: "die Instandhaltung",
+    anlami: "bakım, onarım",
+    ornekCumle: "Der Vermieter ist für die Instandhaltung des Gebäudes verantwortlich."
+  },
+  {
+    kelime: "klug",
+    anlami: "akıllı, zeki",
+    ornekCumle: "Es war klug, zuerst mit dem Nachbarn zu sprechen, bevor man sich beschwert."
+  },
+  {
+    kelime: "der Konflikt",
+    anlami: "anlaşmazlık, çatışma",
+    ornekCumle: "Wir sollten versuchen, den Konflikt friedlich zu lösen."
+  },
+  {
+    kelime: "die Kündigung",
+    anlami: "fesih, işten çıkarma, sözleşmeyi bitirme",
+    ornekCumle: "Ich muss meine Kündigung für die Wohnung schriftlich einreichen."
+  },
+  {
+    kelime: "lüften",
+    anlami: "havalandırmak",
+    ornekCumle: "Man sollte die Wohnung täglich gut lüften, um Schimmel zu vermeiden."
+  },
+  {
+    kelime: "massiv",
+    anlami: "yoğun, büyük, masif",
+    ornekCumle: "Wir hatten massive Probleme mit Lärm aus der Wohnung über uns."
+  },
+  {
+    kelime: "meckern",
+    anlami: "sızlanmak, dırdır etmek",
+    ornekCumle: "Mein Nachbar meckert über alles und jeden."
+  },
+  {
+    kelime: "das Meerschweinchen",
+    anlami: "ginepig",
+    ornekCumle: "Die Kinder meines Nachbarn haben ein Meerschweinchen als Haustier."
+  },
+  {
+    kelime: "die Mieterhöhung",
+    anlami: "kira artışı",
+    ornekCumle: "Wir haben ein Schreiben über eine Mieterhöhung bekommen."
+  },
+  {
+    kelime: "der Mietspiegel",
+    anlami: "kira endeksi",
+    ornekCumle: "Der Vermieter darf die Miete nur im Rahmen des örtlichen Mietspiegels erhöhen."
+  },
+  {
+    kelime: "der Mietvertrag",
+    anlami: "kira sözleşmesi",
+    ornekCumle: "Im Mietvertrag stehen alle Rechte und Pflichten von Mietern und Vermietern."
+  },
+  {
+    kelime: "die Modernisierung",
+    anlami: "modernizasyon",
+    ornekCumle: "Nach der Modernisierung der Wohnung wird die Miete steigen."
+  },
+  {
+    kelime: "nachsehen",
+    anlami: "kontrol etmek, bakmak",
+    ornekCumle: "Kannst du bitte nachsehen, ob der Herd ausgeschaltet ist?"
+  },
+  {
+    kelime: "neugierig",
+    anlami: "meraklı",
+    ornekCumle: "Meine Nachbarin ist sehr neugierig und fragt immer, wer zu Besuch kommt."
+  },
+  {
+    kelime: "obwohl",
+    anlami: "-e rağmen",
+    ornekCumle: "Ich grüße ihn, obwohl er nie zurück grüßt."
+  },
+  {
+    kelime: "offenbar",
+    anlami: "görünüşe göre, belli ki",
+    ornekCumle: "Offenbar sind die neuen Nachbarn sehr nette Leute."
+  },
+  {
+    kelime: "abschicken",
+    anlami: "göndermek, yollamak",
+    ornekCumle: "Ich muss meine Bewerbungsunterlagen bis Freitag abschicken."
+  },
+  {
+    kelime: "die Abwicklung",
+    anlami: "yürütme, işlem, halletme",
+    ornekCumle: "Die Abwicklung des Antrags bei der Behörde hat lange gedauert."
+  },
+  {
+    kelime: "amtlich",
+    anlami: "resmi",
+    ornekCumle: "Für die Anerkennung benötigen Sie ein amtlich beglaubigtes Dokument."
+  },
+  {
+    kelime: "anerkennen",
+    anlami: "tanımak, kabul etmek",
+    ornekCumle: "Wird mein ausländischer Berufsabschluss in Deutschland anerkannt?"
+  },
+  {
+    kelime: "die Anerkennung",
+    anlami: "tanınma, onay",
+    ornekCumle: "Die Anerkennung meines Diploms war ein wichtiger Schritt für mich."
+  },
+  {
+    kelime: "der Anfang",
+    anlami: "başlangıç",
+    ornekCumle: "Aller Anfang ist schwer, besonders in einem neuen Land."
+  },
+  {
+    kelime: "ansteckend",
+    anlami: "bulaşıcı",
+    ornekCumle: "Ihr Lachen ist ansteckend, alle mussten mitlachen."
+  },
+  {
+    kelime: "ausstellen",
+    anlami: "düzenlemek (belge), sergilemek",
+    ornekCumle: "Die Botschaft kann Ihnen ein neues Visum ausstellen."
+  },
+  {
+    kelime: "die Bearbeitung",
+    anlami: "işlem, işleme",
+    ornekCumle: "Die Bearbeitung Ihres Antrags kann bis zu drei Monate dauern."
+  },
+  {
+    kelime: "beglaubigen",
+    anlami: "tasdik etmek, onaylamak",
+    ornekCumle: "Sie müssen die Kopie Ihres Zeugnisses amtlich beglaubigen lassen."
+  },
+  {
+    kelime: "die Beglaubigung",
+    anlami: "tasdik, onay",
+    ornekCumle: "Für die Beglaubigung müssen Sie zum Notar gehen."
+  },
+  {
+    kelime: "der/die Bekannte",
+    anlami: "tanıdık",
+    ornekCumle: "Ein Bekannter von mir hat mir bei der Wohnungssuche geholfen."
+  },
+  {
+    kelime: "benötigen",
+    anlami: "ihtiyaç duymak",
+    ornekCumle: "Welche Unterlagen benötigen Sie für die Anmeldung?"
+  },
+  {
+    kelime: "berufen",
+    anlami: "atamak",
+    ornekCumle: "Er wurde als Professor an die Universität berufen."
+  },
+  {
+    kelime: "bescheinigen",
+    anlami: "belgelemek, tasdik etmek",
+    ornekCumle: "Der Arzt muss Ihnen bescheinigen, dass Sie gesund sind."
+  },
+  {
+    kelime: "dran sein",
+    anlami: "sırası gelmek",
+    ornekCumle: "Nach einer langen Wartezeit war ich endlich dran."
+  },
+  {
+    kelime: "einreichen",
+    anlami: "sunmak, teslim etmek (belge)",
+    ornekCumle: "Sie müssen den Antrag persönlich bei der Behörde einreichen."
+  },
+  {
+    kelime: "enttäuschen",
+    anlami: "hayal kırıklığına uğratmak",
+    ornekCumle: "Die langsame Bürokratie hat mich sehr enttäuscht."
+  },
+  {
+    kelime: "die Enttäuschung",
+    anlami: "hayal kırıklığı",
+    ornekCumle: "Die Enttäuschung war groß, als der Antrag abgelehnt wurde."
+  },
+  {
+    kelime: "der Erhalt",
+    anlami: "alma, teslim alma",
+    ornekCumle: "Bitte bestätigen Sie den Erhalt dieser E-Mail."
+  },
+  {
+    kelime: "die Erklärung",
+    anlami: "açıklama, beyan",
+    ornekCumle: "Ich musste eine schriftliche Erklärung abgeben."
+  },
+  {
+    kelime: "sich erkundigen",
+    anlami: "bilgi almak, sormak",
+    ornekCumle: "Ich möchte mich nach den Voraussetzungen für die Einbürgerung erkundigen."
+  },
+  {
+    kelime: "die Fähigkeit",
+    anlami: "yetenek, beceri",
+    ornekCumle: "Sprachkenntnisse sind eine wichtige Fähigkeit auf dem Arbeitsmarkt."
+  },
+  {
+    kelime: "die Fantasie",
+    anlami: "hayal gücü, fantezi",
+    ornekCumle: "Man braucht viel Fantasie, um sich das Leben in einem fremden Land vorzustellen."
+  },
+  {
+    kelime: "die Formalität",
+    anlami: "formalite, resmi işlem",
+    ornekCumle: "Die Anmeldung ist nur eine Formalität, das geht ganz schnell."
+  },
+  {
+    kelime: "förmlich",
+    anlami: "resmi, şekilsel",
+    ornekCumle: "In dem Brief an die Behörde müssen Sie einen förmlichen Ton verwenden."
+  },
+  {
+    kelime: "die Fotokopie",
+    anlami: "fotokopi",
+    ornekCumle: "Bitte bringen Sie eine Fotokopie Ihres Passes mit."
+  },
+  {
+    kelime: "der Frieden",
+    anlami: "barış",
+    ornekCumle: "Viele Menschen kommen nach Deutschland, weil sie in Frieden leben wollen."
+  },
+  {
+    kelime: "das Führungszeugnis",
+    anlami: "adli sicil kaydı",
+    ornekCumle: "Für den neuen Job musste ich ein polizeiliches Führungszeugnis beantragen."
+  },
+  {
+    kelime: "garantieren",
+    anlami: "garanti etmek",
+    ornekCumle: "Ich kann Ihnen nicht garantieren, dass Ihr Antrag genehmigt wird."
+  },
+  {
+    kelime: "der Gedanke",
+    anlami: "düşünce, fikir",
+    ornekCumle: "Der Gedanke, meine Familie zurückzulassen, war sehr schwer."
+  },
+  {
+    kelime: "die Geduld",
+    anlami: "sabır",
+    ornekCumle: "Bei Behördengängen braucht man oft viel Geduld."
+  },
+  {
+    kelime: "geduldig",
+    anlami: "sabırlı",
+    ornekCumle: "Sie müssen geduldig sein, die Bearbeitung dauert seine Zeit."
+  },
+  {
+    kelime: "die Gemeinsamkeit",
+    anlami: "ortak yön, benzerlik",
+    ornekCumle: "Trotz unterschiedlicher Kulturen haben wir viele Gemeinsamkeiten entdeckt."
+  },
+  {
+    kelime: "der Geruch",
+    anlami: "koku",
+    ornekCumle: "Der Geruch von frisch gebackenem Brot erinnert mich an meine Heimat."
+  },
+  {
+    kelime: "das Gesundheitszeugnis",
+    anlami: "sağlık raporu",
+    ornekCumle: "Für die Arbeit in der Gastronomie benötigt man ein Gesundheitszeugnis."
+  },
+  {
+    kelime: "gewährleisten",
+    anlami: "sağlamak, temin etmek",
+    ornekCumle: "Der Staat muss die Sicherheit seiner Bürger gewährleisten."
+  },
+  {
+    kelime: "häufig",
+    anlami: "sık sık",
+    ornekCumle: "Ich muss häufig zum Amt gehen, um alles zu regeln."
+  },
+  {
+    kelime: "das Heimweh",
+    anlami: "sıla hasreti, vatan özlemi",
+    ornekCumle: "Am Anfang hatte ich starkes Heimweh, aber jetzt fühle ich mich hier wohler."
+  },
+  {
+    kelime: "herkommen",
+    anlami: "gelmek, kökenli olmak",
+    ornekCumle: "Wo kommen Sie ursprünglich her?"
+  },
+  {
+    kelime: "das Herkunftsland",
+    anlami: "menşe ülke, memleket",
+    ornekCumle: "In meinem Herkunftsland ist das Klima viel wärmer."
+  },
+  {
+    kelime: "hierher",
+    anlami: "buraya",
+    ornekCumle: "Warum sind Sie hierher nach Deutschland gekommen?"
+  },
+  {
+    kelime: "hilfsbereit",
+    anlami: "yardımsever",
+    ornekCumle: "Meine Nachbarn waren von Anfang an sehr hilfsbereit."
+  },
+  {
+    kelime: "inzwischen",
+    anlami: "bu arada",
+    ornekCumle: "Inzwischen spreche ich schon ganz gut Deutsch."
+  },
+  {
+    kelime: "die Kopie",
+    anlami: "kopya",
+    ornekCumle: "Machen Sie bitte eine Kopie von diesem Dokument."
+  },
+  {
+    kelime: "die Mentalität",
+    anlami: "zihniyet, anlayış",
+    ornekCumle: "Ich musste mich erst an die deutsche Mentalität gewöhnen."
+  },
+  {
+    kelime: "nachdenklich",
+    anlami: "düşünceli",
+    ornekCumle: "Das Gespräch hat mich sehr nachdenklich gemacht."
+  },
+  {
+    kelime: "der/die Pflegehelfer/in",
+    anlami: "hasta bakıcı yardımcısı",
+    ornekCumle: "Als Pflegehelferin kümmert sie sich um ältere Menschen."
+  },
+  {
+    kelime: "die Pflegekraft",
+    anlami: "hasta bakıcı",
+    ornekCumle: "In Deutschland werden dringend Pflegekräfte gesucht."
+  },
+  {
+    kelime: "die Reihe",
+    anlami: "sıra, dizi",
+    ornekCumle: "Bitte stellen Sie sich in der Reihe an."
+  },
+  {
+    kelime: "der/die Sachbearbeiter/in",
+    anlami: "memur, ilgili görevli",
+    ornekCumle: "Die Sachbearbeiterin bei der Ausländerbehörde war sehr kompetent."
+  },
+  {
+    kelime: "der Sprachnachweis",
+    anlami: "dil yeterlilik belgesi",
+    ornekCumle: "Für die Universität müssen Sie einen Sprachnachweis auf B2-Niveau erbringen."
+  },
+  {
+    kelime: "übereinstimmen",
+    anlami: "aynı fikirde olmak, uyuşmak",
+    ornekCumle: "Die Angaben im Formular müssen mit den Daten in Ihrem Pass übereinstimmen."
+  },
+  {
+    kelime: "überglücklich",
+    anlami: "çok mutlu",
+    ornekCumle: "Ich war überglücklich, als ich die Zusage für den Job bekommen habe."
+  },
+  {
+    kelime: "übersetzen",
+    anlami: "tercüme etmek, çevirmek",
+    ornekCumle: "Können Sie mir bitte diesen Brief ins Türkische übersetzen?"
+  },
+  {
+    kelime: "die Übersetzung",
+    anlami: "tercüme, çeviri",
+    ornekCumle: "Ich brauche eine beglaubigte Übersetzung meiner Geburtsurkunde."
+  },
+  {
+    kelime: "das Übersetzungsbüro",
+    anlami: "tercüme bürosu",
+    ornekCumle: "Ein Übersetzungsbüro kann offizielle Dokumente für Sie übersetzen."
+  },
+  {
+    kelime: "ungeduldig",
+    anlami: "sabırsız",
+    ornekCumle: "Sei nicht so ungeduldig, es dauert eben seine Zeit."
+  },
+  {
+    kelime: "vermissen",
+    anlami: "özlemek",
+    ornekCumle: "Ich vermisse meine Familie und meine Freunde in der Heimat sehr."
+  },
+  {
+    kelime: "verurteilen",
+    anlami: "kınamak, mahkum etmek",
+    ornekCumle: "Man sollte niemanden wegen seiner Herkunft verurteilen."
+  },
+  {
+    kelime: "wahr",
+    anlami: "doğru, gerçek",
+    ornekCumle: "Ist es wahr, dass man in Deutschland so viele Formulare ausfüllen muss?"
+  },
+  {
+    kelime: "weitergehen",
+    anlami: "devam etmek",
+    ornekCumle: "Nach der Pause ging der Deutschkurs weiter."
+  },
+  {
+    kelime: "sich wohlfühlen",
+    anlami: "kendini iyi hissetmek",
+    ornekCumle: "Fühlen Sie sich in Ihrer neuen Wohnung wohl?"
+  },
+  {
+    kelime: "das Ziel",
+    anlami: "hedef, amaç",
+    ornekCumle: "Mein Ziel ist es, die B2-Prüfung in sechs Monaten zu bestehen."
+  },
+  {
+    kelime: "zügig",
+    anlami: "hızlı, çabuk",
+    ornekCumle: "Ich hoffe auf eine zügige Bearbeitung meines Antrags."
+  },
+  {
+    kelime: "zusammenstellen",
+    anlami: "bir araya getirmek, derlemek",
+    ornekCumle: "Ich muss alle nötigen Unterlagen für den Antrag zusammenstellen."
+  },
+  // Lektion 8: Ein neuer Arbeitsplatz
+  {
+    kelime: "abhängig",
+    anlami: "bağımlı",
+    ornekCumle: "Meine Entscheidung ist davon abhängig, ob ich den Job bekomme."
+  },
+  {
+    kelime: "absolvieren",
+    anlami: "bitirmek, tamamlamak (okul, kurs vb.)",
+    ornekCumle: "Nachdem sie ihr Studium absolviert hatte, fand sie schnell eine Stelle."
+  },
+  {
+    kelime: "der/die Abteilungsleiter/in",
+    anlami: "bölüm yöneticisi/şefi",
+    ornekCumle: "Morgen habe ich ein Gespräch mit meiner neuen Abteilungsleiterin."
+  },
+  {
+    kelime: "abwechslungsreich",
+    anlami: "çeşitli, zengin içerikli",
+    ornekCumle: "Ich suche eine abwechslungsreiche Arbeit, die nicht jeden Tag gleich ist."
+  },
+  {
+    kelime: "der/die Altenpfleger/in",
+    anlami: "yaşlı bakıcısı",
+    ornekCumle: "Als Altenpfleger kümmert er sich um die Bedürfnisse älterer Menschen."
+  },
+  {
+    kelime: "die Anlage",
+    anlami: "ek, tesis",
+    ornekCumle: "In der Anlage dieser E-Mail finden Sie meinen Lebenslauf."
+  },
+  {
+    kelime: "die Annahme",
+    anlami: "kabul, varsayım",
+    ornekCumle: "Die Annahme, dass alle Deutschen pünktlich sind, ist ein Klischee."
+  },
+  {
+    kelime: "anrechnen",
+    anlami: "saymak, hesaba katmak",
+    ornekCumle: "Kann ich mir meine bisherige Berufserfahrung für die Ausbildung anrechnen lassen?"
+  },
+  {
+    kelime: "die Anstellung",
+    anlami: "iş, istihdam",
+    ornekCumle: "Er hat eine feste Anstellung bei einem großen Unternehmen gefunden."
+  },
+  {
+    kelime: "die Arbeitsstelle",
+    anlami: "iş yeri",
+    ornekCumle: "Meine neue Arbeitsstelle ist zum Glück nicht weit von meiner Wohnung entfernt."
+  },
+  {
+    kelime: "die Arbeitsweise",
+    anlami: "çalışma şekli/yöntemi",
+    ornekCumle: "Jeder Mitarbeiter hat seine eigene Arbeitsweise."
+  },
+  {
+    kelime: "die Arbeitszeit",
+    anlami: "çalışma saati, mesai",
+    ornekCumle: "Wir haben flexible Arbeitszeiten, das ist sehr praktisch."
+  },
+  {
+    kelime: "die Assistenz",
+    anlami: "asistanlık, yardım",
+    ornekCumle: "Sie arbeitet in der Assistenz der Geschäftsführung."
   }
+
 ];
